@@ -14,19 +14,21 @@
     "url": "https://github.com/sketchbuch/vsc-rename-terminal-button/issues"
   },
   "categories": [
-    "Linters",
     "Other"
   ],
   "engines": {
     "vscode": "^1.35.0"
   },
-  "activationEvents": [
-    "*"
+  "keywords": [
+    "statusbar"
   ],
   "repository": {
     "type": "git",
     "url": "https://github.com/sketchbuch/vsc-rename-terminal-button"
   },
+  "activationEvents": [
+    "*"
+  ],
   "scripts": {
     "vscode:prepublish": "yarn run compile",
     "compile": "tsc -p ./",
@@ -39,7 +41,7 @@
   },
   "devDependencies": {
     "@types/chai": "^4.1.7",
-    "@types/mocha": "^2.2.42",
+    "@types/mocha": "^5.2.7",
     "@types/node": "^10.12.21",
     "@types/sinon": "^7.0.13",
     "chai": "^4.2.0",

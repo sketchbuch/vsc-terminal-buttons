@@ -2,7 +2,7 @@
   "name": "vsc-rename-terminal-button",
   "displayName": "Rename terminal Button",
   "description": "Adds a button to the right hand side of the statusbar to run the 'Rename terminal' command",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "SEE LICENSE IN LICENSE.txt",
   "publisher": "sketchbuch",
   "main": "./out/extension.js",

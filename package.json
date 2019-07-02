@@ -1,0 +1,52 @@
+{
+  "name": "vsc-rename-terminal-button",
+  "displayName": "Rename terminal Button",
+  "description": "Adds a button to the righthand side of the statusbar to run the 'Rename terminal' command",
+  "version": "1.0.0",
+  "license": "SEE LICENSE IN LICENSE.txt",
+  "publisher": "sketchbuch",
+  "main": "./out/extension.js",
+  "icon": "logo.png",
+  "author": {
+    "name": "sketchbuch"
+  },
+  "bugs": {
+    "url": "https://github.com/sketchbuch/vsc-rename-terminal-button/issues"
+  },
+  "categories": [
+    "Linters",
+    "Other"
+  ],
+  "engines": {
+    "vscode": "^1.35.0"
+  },
+  "activationEvents": [
+    "*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sketchbuch/vsc-rename-terminal-button"
+  },
+  "scripts": {
+    "vscode:prepublish": "yarn run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "postinstall": "node ./node_modules/vscode/bin/install",
+    "test": "yarn run compile && node ./node_modules/vscode/bin/test"
+  },
+  "dependencies": {
+    "vscode-nls": "^4.1.1"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.1.7",
+    "@types/mocha": "^2.2.42",
+    "@types/node": "^10.12.21",
+    "@types/sinon": "^7.0.13",
+    "chai": "^4.2.0",
+    "sinon": "^7.3.2",
+    "ts-mockito": "^2.3.1",
+    "tslint": "^5.12.1",
+    "typescript": "^3.3.1",
+    "vscode": "^1.1.28"
+  }
+}

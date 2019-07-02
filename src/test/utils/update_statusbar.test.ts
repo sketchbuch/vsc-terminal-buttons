@@ -4,7 +4,7 @@ import * as sinon from 'sinon';
 import { afterEach, beforeEach } from 'mocha';
 import updateStatusbar from '../../utils/update_statusbar';
 
-const getMockEditorTerminal = () => {
+export const getMockEditorTerminal = (): vscode.Terminal => {
   return {} as vscode.Terminal;
 };
 

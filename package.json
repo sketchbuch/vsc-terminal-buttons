@@ -2,7 +2,7 @@
   "name": "vsc-rename-terminal-button",
   "description": "Adds a button to the right hand side of the statusbar to run the 'Rename terminal' command",
   "displayName": "Rename terminal Button",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "activationEvents": [
     "onCommand:workbench.action.terminal.new",
     "onCommand:workbench.action.terminal.newInActiveWorkspace",

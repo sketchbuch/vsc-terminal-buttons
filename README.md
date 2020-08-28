@@ -8,7 +8,6 @@ Adds a button to the right hand side of the statusbar to run the 'Rename termina
 
 ## Latest version
 
-#### [1.1.1](https://github.com/sketchbuch/vsc-rename-terminal-button/compare/v1.0.2...v1.1.1) (2020-06-06)
+#### [1.1.2](https://github.com/sketchbuch/vsc-rename-terminal-button/compare/v1.1.1...v1.1.2) (2020-08-28)
 
-- Localised
-- New logo
+- Switched translations to vscode-ext-localisation

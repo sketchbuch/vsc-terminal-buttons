@@ -1,5 +1,6 @@
+
+import { getVscodeLang, loadTranslations } from 'vscode-ext-localisation';
 import * as vscode from 'vscode';
-import { getVscodeLang, loadTranslations } from '../localisation';
 import buttons from '../buttons/buttons';
 import createButtons from '../utils/create_buttons';
 import updateStatusbar from '../utils/update_statusbar';

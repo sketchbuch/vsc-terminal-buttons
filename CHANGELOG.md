@@ -1,6 +1,6 @@
 # Change Log
 
-## [1.1.2](https://github.com/sketchbuch/vsc-rename-terminal-button/compare/v1.1.1...v1.1.2) (2020-08-28)
+## [1.1.3](https://github.com/sketchbuch/vsc-rename-terminal-button/compare/v1.1.1...v1.1.3) (2020-08-28)
 
 - Switched translations to vscode-ext-localisation
 

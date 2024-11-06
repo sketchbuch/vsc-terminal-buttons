@@ -1,16 +1,14 @@
-import { Button } from '../../types/buttons';
+import { Button } from '../../types/buttons'
 
-const mockButtons: Button[] = [
+export const mockButtons: Button[] = [
   {
     command: 'cmd-1',
     text: 'text-1',
-    tooltip: 'toolti-1',
+    tooltip: 'tooltip-1',
   },
   {
     command: 'cmd-2',
     text: 'text-2',
-    tooltip: 'toolti-2',
+    tooltip: 'tooltip-2',
   },
-];
-
-export default mockButtons;
+]

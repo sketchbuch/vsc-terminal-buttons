@@ -2,7 +2,7 @@ import * as vscode from 'vscode'
 import { BTN_ALIGNMENT, BTN_PRIORITY } from '../constants/buttons'
 import { Button } from '../types/buttons'
 
-const createButtons = (buttons: Button[]): vscode.StatusBarItem[] => {
+export const createButtons = (buttons: Button[]): vscode.StatusBarItem[] => {
   return buttons.map((command: Button): vscode.StatusBarItem => {
     const newBtn: vscode.StatusBarItem = vscode.window.createStatusBarItem(
       BTN_ALIGNMENT,
@@ -16,5 +16,3 @@ const createButtons = (buttons: Button[]): vscode.StatusBarItem[] => {
     return newBtn
   })
 }
-
-export default createButtons

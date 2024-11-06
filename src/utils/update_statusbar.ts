@@ -1,15 +1,16 @@
-import * as vscode from 'vscode';
+import * as vscode from 'vscode'
 
-const updateStatusbar = (terminal: vscode.Terminal | undefined, buttons: vscode.StatusBarItem[]): void => {
-  let showButtons: boolean = !!terminal;
+export const updateStatusbar = (
+  terminal: vscode.Terminal | undefined,
+  buttons: vscode.StatusBarItem[]
+): void => {
+  let showButtons: boolean = !!terminal
 
   buttons.forEach((btn: vscode.StatusBarItem) => {
     if (showButtons) {
-      btn.show();
+      btn.show()
     } else {
-      btn.hide();
+      btn.hide()
     }
-  });
-};
-
-export default updateStatusbar;
+  })
+}

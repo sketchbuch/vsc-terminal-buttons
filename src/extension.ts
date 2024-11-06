@@ -1,2 +1,2 @@
-export { default as activate } from './core/activate';
-export { default as deactivate } from './core/deactivate';
+export { activate } from './core/activate'
+export { deactivate } from './core/deactivate'

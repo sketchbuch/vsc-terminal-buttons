@@ -1,12 +1,11 @@
+import { t } from 'vscode-ext-localisation'
 import { BTN_RENAME_TERMINAL } from '../constants/buttons'
 import { Button } from '../types/buttons'
 
-const buttons: Button[] = [
+export const buttons: Button[] = [
   {
     command: BTN_RENAME_TERMINAL,
-    text: localise('rename.text', '> Rename'),
-    tooltip: localise('rename.tooltip', 'Rename the active terminal'),
+    text: t('buttons.rename.label'),
+    tooltip: t('buttons.rename.tooltip'),
   },
 ]
-
-export default buttons

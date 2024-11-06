@@ -2,26 +2,26 @@ import * as vscode from 'vscode'
 import { updateStatusbar } from './updateStatusbar'
 
 export const terminalUpdate = (
-  buttons: vscode.StatusBarItem[],
+  statusbarButtons: vscode.StatusBarItem[],
   terminals: readonly vscode.Terminal[]
 ): void => {
   if (terminals.length > 0) {
-    updateStatusbar(vscode.window.activeTerminal, buttons)
+    updateStatusbar(vscode.window.activeTerminal, statusbarButtons)
   } else {
-    updateStatusbar(undefined, buttons)
+    updateStatusbar(undefined, statusbarButtons)
   }
 }
 
-export const watchTerminals = (buttons: vscode.StatusBarItem[]): void => {
+export const watchTerminals = (statusbarButtons: vscode.StatusBarItem[]): void => {
   vscode.window.onDidChangeActiveTerminal(() => {
-    terminalUpdate(buttons, vscode.window.terminals)
+    terminalUpdate(statusbarButtons, vscode.window.terminals)
   })
 
   vscode.window.onDidCloseTerminal(() => {
-    terminalUpdate(buttons, vscode.window.terminals)
+    terminalUpdate(statusbarButtons, vscode.window.terminals)
   })
 
   vscode.window.onDidOpenTerminal(() => {
-    terminalUpdate(buttons, vscode.window.terminals)
+    terminalUpdate(statusbarButtons, vscode.window.terminals)
   })
 }

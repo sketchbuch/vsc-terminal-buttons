@@ -1,20 +1,20 @@
-import * as vscode from 'vscode';
-import * as nls from 'vscode-nls';
-import { BTN_ALIGNMENT, BTN_PRIORITY } from '../constants/buttons';
-import { Button } from '../types/buttons';
+import * as vscode from 'vscode'
+import { BTN_ALIGNMENT, BTN_PRIORITY } from '../constants/buttons'
+import { Button } from '../types/buttons'
 
 const createButtons = (buttons: Button[]): vscode.StatusBarItem[] => {
-  return buttons.map(
-    (command: Button): vscode.StatusBarItem => {
-      const newBtn: vscode.StatusBarItem = vscode.window.createStatusBarItem(BTN_ALIGNMENT, BTN_PRIORITY);
+  return buttons.map((command: Button): vscode.StatusBarItem => {
+    const newBtn: vscode.StatusBarItem = vscode.window.createStatusBarItem(
+      BTN_ALIGNMENT,
+      BTN_PRIORITY
+    )
 
-      newBtn.command = command.command;
-      newBtn.text = command.text;
-      newBtn.tooltip = command.tooltip;
+    newBtn.command = command.command
+    newBtn.text = command.text
+    newBtn.tooltip = command.tooltip
 
-      return newBtn;
-    }
-  );
-};
+    return newBtn
+  })
+}
 
-export default createButtons;
+export default createButtons

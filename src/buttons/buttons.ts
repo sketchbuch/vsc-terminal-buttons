@@ -1,8 +1,5 @@
-import * as nls from 'vscode-nls';
-import { Button } from '../types/buttons';
-import { BTN_RENAME_TERMINAL } from '../constants/buttons';
-
-const localise: nls.LocalizeFunc = nls.config({ messageFormat: nls.MessageFormat.file })();
+import { BTN_RENAME_TERMINAL } from '../constants/buttons'
+import { Button } from '../types/buttons'
 
 const buttons: Button[] = [
   {
@@ -10,6 +7,6 @@ const buttons: Button[] = [
     text: localise('rename.text', '> Rename'),
     tooltip: localise('rename.tooltip', 'Rename the active terminal'),
   },
-];
+]
 
-export default buttons;
+export default buttons

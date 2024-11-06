@@ -1,14 +1,28 @@
 {
   "compilerOptions": {
+    "esModuleInterop": true,
+    "experimentalDecorators": false,
+    "forceConsistentCasingInFileNames": false,
+    "lib": ["es6", "dom", "es2019"],
     "module": "commonjs",
-    "target": "es6",
-    "outDir": "out",
-    "lib": ["es6"],
-    "sourceMap": true,
+    "noImplicitAny": true,
+    "noUnusedLocals": true,
+    "outDir": "test",
     "rootDir": "src",
+    "sourceMap": true,
     "strict": true,
-    "noFallthroughCasesInSwitch": true,
-    "noUnusedParameters": true
+    "strictNullChecks": true,
+    "target": "es6"
   },
-  "exclude": ["node_modules", ".vscode-test"]
+  "exclude": [
+    ".cache",
+    ".vscode-test",
+    "/test",
+    "build/",
+    "dist/",
+    "node_modules/",
+    "out/",
+    "resources/js/**/*"
+  ],
+  "include": ["src/**/*"]
 }

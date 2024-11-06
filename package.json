@@ -1,5 +1,5 @@
 {
-  "name": "vsc-rename-terminal-button",
+  "name": "vsc-terminal-buttons",
   "displayName": "Rename terminal Button",
   "description": "Adds a button to the right hand side of the statusbar to run the 'Rename terminal' command",
   "version": "1.0.2",
@@ -11,7 +11,7 @@
     "name": "sketchbuch"
   },
   "bugs": {
-    "url": "https://github.com/sketchbuch/vsc-rename-terminal-button/issues"
+    "url": "https://github.com/sketchbuch/vsc-terminal-buttons/issues"
   },
   "categories": [
     "Other"
@@ -25,7 +25,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/sketchbuch/vsc-rename-terminal-button"
+    "url": "https://github.com/sketchbuch/vsc-terminal-buttons"
   },
   "activationEvents": [
     "*"

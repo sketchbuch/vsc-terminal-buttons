@@ -13,8 +13,8 @@ export const createButtons = (buttons: Button[]): vscode.StatusBarItem[] => {
     )
 
     newBtn.command = btn.command
-    newBtn.text = t(btn.text)
-    newBtn.tooltip = t(btn.tooltip)
+    newBtn.text = t(btn.textKey)
+    newBtn.tooltip = t(btn.tooltipKey)
 
     return newBtn
   })

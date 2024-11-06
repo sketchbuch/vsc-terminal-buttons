@@ -8,6 +8,8 @@ import { watchTerminals } from '../setup/watchTerminals'
 export const setupExt = (context: vscode.ExtensionContext, lang: string) => {
   loadTranslations(lang, context.extensionPath)
 
+  console.log('### translations loaded')
+
   const statusbarButtons: vscode.StatusBarItem[] = createButtons(buttons)
 
   watchTerminals(statusbarButtons)

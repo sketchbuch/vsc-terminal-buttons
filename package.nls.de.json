@@ -1,11 +1,11 @@
 {
   "buttons": {
     "rename": {
-      "text": "Umbenennen",
+      "text": "> Umbenennen",
       "tooltip": "Aktives Terminal umbenennen"
     },
     "show": {
-      "text": "Anzeigen",
+      "text": "> Anzeigen",
       "tooltip": "Terminals anzeigen"
     }
   }

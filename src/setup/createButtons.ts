@@ -1,4 +1,5 @@
 import * as vscode from 'vscode'
+import { t } from 'vscode-ext-localisation'
 import { Button } from '../buttons/buttons'
 
 export const BTN_PRIORITY: number = 100 // The higher the number the more left the button appears
@@ -12,8 +13,8 @@ export const createButtons = (buttons: Button[]): vscode.StatusBarItem[] => {
     )
 
     newBtn.command = btn.command
-    newBtn.text = btn.text
-    newBtn.tooltip = btn.tooltip
+    newBtn.text = t(btn.text)
+    newBtn.tooltip = t(btn.tooltip)
 
     return newBtn
   })

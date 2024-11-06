@@ -1,5 +1,3 @@
-import { t } from 'vscode-ext-localisation'
-
 export interface Button {
   command: string
   text: string
@@ -12,12 +10,12 @@ export const BTN_SHOW_TERMINAL: string = 'workbench.action.terminal.focus'
 export const buttons: Button[] = [
   {
     command: BTN_RENAME_TERMINAL,
-    text: t('buttons.rename.text'),
-    tooltip: t('buttons.rename.tooltip'),
+    text: 'buttons.rename.text',
+    tooltip: 'buttons.rename.tooltip',
   },
   {
     command: BTN_SHOW_TERMINAL,
-    text: t('buttons.show.text'),
-    tooltip: t('buttons.show.tooltip'),
+    text: 'buttons.show.text',
+    tooltip: 'buttons.show.tooltip',
   },
 ]

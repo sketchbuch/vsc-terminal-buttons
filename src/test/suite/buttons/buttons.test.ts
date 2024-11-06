@@ -1,6 +1,5 @@
 import * as assert from 'assert'
-import { buttons } from '../../../buttons/buttons'
-import { BTN_RENAME_TERMINAL } from '../../../constants/buttons'
+import { BTN_RENAME_TERMINAL, buttons } from '../../../buttons/buttons'
 
 suite('buttons:', function () {
   test('Contains 1 button', function () {

@@ -1,6 +1,8 @@
 import * as vscode from 'vscode'
-import { BTN_ALIGNMENT, BTN_PRIORITY } from '../constants/buttons'
-import { Button } from '../types/buttons'
+import { Button } from '../buttons/buttons'
+
+export const BTN_PRIORITY: number = 100 // The higher the number the more left the button appears
+export const BTN_ALIGNMENT: vscode.StatusBarAlignment = vscode.StatusBarAlignment.Right
 
 export const createButtons = (buttons: Button[]): vscode.StatusBarItem[] => {
   return buttons.map((command: Button): vscode.StatusBarItem => {

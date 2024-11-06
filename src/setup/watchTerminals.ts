@@ -1,5 +1,5 @@
 import * as vscode from 'vscode'
-import { updateStatusbar } from './update_statusbar'
+import { updateStatusbar } from './updateStatusbar'
 
 export const terminalUpdate = (
   buttons: vscode.StatusBarItem[],

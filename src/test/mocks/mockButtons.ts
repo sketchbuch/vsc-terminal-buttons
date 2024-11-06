@@ -1,4 +1,4 @@
-import { Button } from '../../types/buttons'
+import { Button } from '../../buttons/buttons'
 
 export const mockButtons: Button[] = [
   {

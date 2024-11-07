@@ -10,7 +10,7 @@ export const setupExt = (context: vscode.ExtensionContext, lang: string) => {
 
   const statusbarButtons: vscode.StatusBarItem[] = createButtons(buttons)
 
-  watchTerminals(statusbarButtons)
+  watchTerminals(context, statusbarButtons)
   updateStatusbar(vscode.window.activeTerminal, statusbarButtons)
 }
 

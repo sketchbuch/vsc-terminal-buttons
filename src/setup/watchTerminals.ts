@@ -12,16 +12,23 @@ export const terminalUpdate = (
   }
 }
 
-export const watchTerminals = (statusbarButtons: vscode.StatusBarItem[]): void => {
-  vscode.window.onDidChangeActiveTerminal(() => {
+export const watchTerminals = (
+  context: vscode.ExtensionContext,
+  statusbarButtons: vscode.StatusBarItem[]
+): void => {
+  const activeTerminal = vscode.window.onDidChangeActiveTerminal(() => {
     terminalUpdate(statusbarButtons, vscode.window.terminals)
   })
 
-  vscode.window.onDidCloseTerminal(() => {
+  const closeTerminal = vscode.window.onDidCloseTerminal(() => {
     terminalUpdate(statusbarButtons, vscode.window.terminals)
   })
 
-  vscode.window.onDidOpenTerminal(() => {
+  const openTerminal = vscode.window.onDidOpenTerminal(() => {
     terminalUpdate(statusbarButtons, vscode.window.terminals)
   })
+
+  context.subscriptions.push(activeTerminal)
+  context.subscriptions.push(closeTerminal)
+  context.subscriptions.push(openTerminal)
 }

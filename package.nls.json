@@ -1,4 +1,7 @@
 {
+  "config.renameLabel.description": "An alternative 'rename' button label to use for the instead of the default one",
+  "config.showLabel.description": "An alternative 'show' button label to use for the instead of the default one",
+  "config.title": "Terminal Buttons",
   "buttons": {
     "rename": {
       "text": "> Rename",

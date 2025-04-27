@@ -1,8 +1,12 @@
+![Workspace Sidebar Preview](docs/images/logo/logo.png)
+
 # Change Log
 
-All notable changes to the "vsc-terminal-buttons" extension will be documented in this file.
+[Back to Readme](README.md)
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+## [2.0.0](https://github.com/sketchbuch/vsc-terminal-buttons/compare/v2.0.0...v1.1.3) (2024-12-25)
+- Add show terminals button
+- Updated docs
 
 ## 1.0.0
 

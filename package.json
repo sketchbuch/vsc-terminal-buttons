@@ -1,8 +1,8 @@
 {
-  "name": "vsc-terminal-buttons",
-  "displayName": "Rename terminal Button",
-  "description": "Adds a button to the right hand side of the statusbar to run the 'Rename terminal' command",
-  "version": "1.1.0",
+  "name": "vsc-rename-terminal-button",
+  "displayName": "Terminal Buttons",
+  "description": "Adds buttons to the right hand side of the statusbar to rename the current terminal or show terminals if hidden.",
+  "version": "2.0.0",
   "activationEvents": [
     "onStartupFinished"
   ],
